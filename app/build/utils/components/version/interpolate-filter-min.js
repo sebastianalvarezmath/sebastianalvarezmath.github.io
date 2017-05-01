@@ -1,0 +1,1 @@
+"use strict";angular.module("musicApp.version.interpolate-filter",[]).filter("interpolate",["version",function(e){return function(r){return String(r).replace(/\%VERSION\%/gm,e)}}]);

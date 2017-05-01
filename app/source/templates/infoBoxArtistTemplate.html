@@ -1,0 +1,9 @@
+<div ng-click="spanInformation()" class="infoBox">
+    <!--<img src="{{information.images[0].url}}">-->
+    <!--<adjust-image width="100px" height="200px" image-properties="{width: '1215px', height: '264px', url: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Wide_view_over_S%C3%B8rfjorden_from_the_coast_of_Sveingard%2C_2012_June.jpg'}"></adjust-image>-->
+
+    <adjust-image image-properties="information.images[0]"
+                  default-image="{width: '228px', height: '196px', url: 'static/Images/Bitmap@2x.png'}">
+    </adjust-image>
+    <span>{{ information.name }}</span>
+</div>

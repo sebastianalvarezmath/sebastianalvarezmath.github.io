@@ -1,0 +1,173 @@
+@import "../utilities";
+
+
+.infoBoxHeader {
+  background-color: yellow;
+}
+
+
+.header {
+  @include asign-constant-properties-value((margin, paddding, border), 0);
+  position: relative;
+
+  h2 { padding-left: 16px;
+    margin-bottom: 0;
+    font-size: 10px;
+    color: #555555;
+    border-bottom: 2px dashed #ddd;
+  }
+
+  p {
+    @include bottom-left();
+    color: floralwhite;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 16px;
+  }
+
+  h3{
+    color: #b2455d;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 20px 0px 0px;
+    padding: 0;
+    border: 0px;
+    display: inline-block;
+    float: right;
+  }
+
+  .adjustImage{
+    width: 80vw;
+    height: 30vh;
+  }
+}
+
+.content-artist {
+  @include asign-constant-properties-value((margin, paddding, border), 0);
+  overflow-y: scroll;
+  width: 80vw;
+
+  h2 {
+    font-size: 15px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0 auto 0 auto;
+    padding: 0;
+
+  }
+
+  tr:hover {
+    background-color: #f5f5f5
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    float: right;
+  }
+
+  tr p {
+    font-family: Arial Black,Arial Bold,Gadget,sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26.4px;
+    color: #b2455d;
+  }
+
+  li img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    float: left;
+  }
+
+  a{
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li:hover {
+    background-color: lightblue;
+  }
+}
+
+.content-album {
+
+  @include asign-constant-properties-value((margin, paddding, border), 0);
+  margin-top: 15px;
+  overflow-y: scroll;
+  width: 80vw;
+
+  h2 {
+    @include not-overlapping-text();
+    width: 100%;
+    font-family: Century Gothic, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+    color: #323232;
+    padding: 0;
+    margin: 0px 0px 0px 5px;
+    font-size: 15px;
+  }
+
+  p {
+    @include not-overlapping-text();
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    color: #555555;
+    margin: 0px 0px 5px 5px;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+}
+
+.content-track {
+
+  @include asign-constant-properties-value((margin, paddding, border), 0);
+  margin-top: 15px;
+  overflow-y: scroll;
+  width: 80vw;
+
+  h2 {
+    font-family: Century Gothic, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 26.4px;
+    color: #323232;
+    padding: 0;
+    margin: 0px 0px 0px 5px;
+    font-size: 15px;
+  }
+
+  p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    color: #555555;
+    margin: 0px 0px 5px 5px;
+    border-bottom: 1px solid #ddd;
+  }
+
+}
+

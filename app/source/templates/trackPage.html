@@ -1,0 +1,18 @@
+<div class="header">
+    <adjust-image draggable="true"
+                  image-properties="info.selectedItem.album.images[0]"
+                  default-image="{width: '282px', height: '393px', url: 'http://app.siteland.es/wp-content/uploads/2013/07/imagen_corporativa.jpg'}">
+    </adjust-image>
+
+    <p> {{ info.selectedItem.name }} </p>
+
+    <h2>Track</h2>
+</div>
+
+<div class="content-track niceScrollbar">
+    <h2>{{ info.selectedItem.name }} </h2>
+    <p>Artist: {{info.selectedItem.artists[0].name}}</p>
+    <p>Duration: {{info.selectedItem.duration_ms | date:'mm:ss'}}</p>
+    <p>Track Number: {{info.selectedItem.track_number}}</p>
+    <p>Album: {{info.selectedItem.album.name }}</p>
+</div>

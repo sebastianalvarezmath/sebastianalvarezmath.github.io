@@ -1,0 +1,1 @@
+angular.module("musicApp.directives").directive("albumInfoBox",[function(){function e(e,t){e.spanInformation=function(){e.setSelectedItem({itemInfo:e.information,type:"album"})}}return{link:e,scope:{information:"=",setSelectedItem:"&"},templateUrl:"templates/infoBoxAlbumTemplate.html"}}]);

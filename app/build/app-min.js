@@ -1,0 +1,1 @@
+"use strict";angular.module("musicApp",["ngRoute","ngMaterial","musicApp.resources","musicApp.version","musicApp.startPage","musicApp.directives"]).config(["$locationProvider","$routeProvider",function(e,i){e.hashPrefix(""),i.otherwise({redirectTo:"/start"})}]);

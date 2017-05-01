@@ -1,0 +1,77 @@
+@import "../utilities";
+@import "startPage";
+
+
+$box-width: 100%;
+$box-horizontal-sep: 15px;
+$results-per-line: 1;
+$box-lateral: 4%;
+
+
+.infoBox {
+  @include symmetric-rounded-border(4px);
+  $image-width: 25%;
+  //@extend .constantBoxSize;
+  display: block;
+  position: relative;
+  background-color: white;
+  margin-left: $box-horizontal-sep;
+  width: $box-width - 2 * $box-lateral;
+  height: $image-width;
+  margin-top: 40px;
+
+  //-webkit-box-shadow: 0 0 22px 1px rgba(0,0,0,0.62);
+  //-moz-box-shadow: 0 0 22px 1px rgba(0,0,0,0.62);
+  //box-shadow: 0 0 22px 1px rgba(0,0,0,0.62);
+
+  .adjustImage{
+    width: $image-width;
+    height: auto;
+  }
+  span {
+    @include not-overlapping-text();
+    position: absolute;
+    display: block;
+    top: 0;
+    width: calc(100% - #{$image-width});
+    left: $image-width;
+    padding-top: $image-width/5;
+    padding-left: 15px;
+    //width: 50%;
+  }
+  img {
+    @include symmetric-rounded-border(4px);
+    display: inline;
+    filter: brightness(80%);
+    overflow: hidden;
+  }
+}
+.searchResults {
+  display: block;
+  margin-left: $box-lateral;
+
+  button {
+
+    $border-radius: 100px;
+    $input-width: 400px;
+    display: block;
+    @include symmetric-rounded-border($border-radius);
+    width: 70px;
+    height: 27px;
+    background-color: #d05d84;
+    color: white;
+    padding: 0;
+    margin: 25px 15px 15px 15px;
+
+  }
+
+}
+
+
+.infoBoxAlbum {
+  display: inline;
+  text-align: center;
+  width: 200px;
+}
+
+

@@ -1,0 +1,1 @@
+angular.module("musicApp.directives").directive("artistInfoBox",[function(){function t(t,e){t.spanInformation=function(){t.setSelectedItem({itemInfo:t.information,type:"artist"})}}return{link:t,scope:{information:"=",setSelectedItem:"&"},templateUrl:"templates/infoBoxArtistTemplate.html"}}]);

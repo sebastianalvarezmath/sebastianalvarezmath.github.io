@@ -1,0 +1,15 @@
+
+.draggable {
+  margin-bottom: -4px;
+  overflow: hidden;
+  cursor: move;
+  * {
+    user-drag: none;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}

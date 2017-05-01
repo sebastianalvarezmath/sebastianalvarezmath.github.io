@@ -1,0 +1,18 @@
+<div class="adjustImage">
+    <touch2-scroll draggable="draggable">
+        <img ng-if="isHigherImage"
+             class="higherImage"
+             ng-style="{'margin-left': marginLeft, 'margin-top': marginTop}"
+             ng-src={{image2Draw.url}}>
+
+        <img ng-if="isWiderImage"
+             class="widerImage"
+             ng-style="{'margin-left': marginLeft, 'margin-top': marginTop}"
+             ng-src={{image2Draw.url}}>
+
+        <img ng-if="sameRatioImage"
+             class="sameRatioImage"
+             ng-style="{'margin-left': marginLeft, 'margin-top': marginTop}"
+             ng-src={{image2Draw.url}}>
+    </touch2-scroll>
+</div>

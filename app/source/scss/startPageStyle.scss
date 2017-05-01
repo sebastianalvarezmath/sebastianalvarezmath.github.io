@@ -1,0 +1,21 @@
+@import "utilities";
+
+
+html, body {
+  background-color: #333441;
+}
+
+$break-point-phones: 800px;
+@media only screen and (min-width: $break-point-phones) {
+  @import "desktop/startPage";
+  @import "desktop/boxStyles";
+  @import "desktop/subPagesStyle";
+}
+
+
+@media only screen and (max-width: $break-point-phones) {
+  @import "phone/startPage";
+  @import "phone/boxStyles";
+  @import "phone/subPagesStyle";
+}
+
