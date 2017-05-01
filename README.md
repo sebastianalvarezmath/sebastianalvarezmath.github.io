@@ -6,7 +6,7 @@ for information about music and show the results on a
 simple angularjs application.
 
 The resulting page is hosted on GitHub pages in the 
-URL [http://hsebasa.github.io/](http://hsebasa.github.io).
+URL [http://sebastianalvarezmath.github.io/](http://sebastianalvarezmath.github.io).
  
 
 # Installing dependences and starting server
@@ -63,7 +63,7 @@ source. The _build_ folder is not ignored (it is commited) because
 it contains the version to publish on GitHub pages. The __index.html__
 contains a simple _Jekyll_ code that redirects to __app/build/__, so 
 __app/build/index.html__ can be accessed just typing 
-[http://hsebasa.github.io/](http://hsebasa.github.io).
+[http://sebastianalvarezmath.github.io/](http://sebastianalvarezmath.github.io).
 
 Angular directives and filters are all placed in the folder 
 __app/source/directives__ and __app/source/filters__ respectively.
